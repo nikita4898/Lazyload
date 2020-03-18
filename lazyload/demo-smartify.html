@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lazy Load</title>
+	<style>
+		.img-block {
+			text-align: center;
+		}
+		img {
+			width: 700px; 
+			height: 467px; 
+			display: block;
+			margin: 0 auto 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="img-block">
+		<img class="smartify" sm-src="images/1.jpg"/>
+		<img class="smartify" sm-src="images/2.jpg"/>
+		<img class="smartify" sm-src="images/3.jpg"/>
+		<img class="smartify" sm-src="images/4.jpg"/>
+		<img class="smartify" sm-src="images/5.jpg"/>
+		<img class="smartify" sm-src="images/6.jpg"/>
+		<img class="smartify" sm-src="images/7.jpg"/>
+		<img class="smartify" sm-src="images/8.jpg"/>
+		<img class="smartify" sm-src="images/9.jpg"/>
+		<img class="smartify" sm-src="images/0.jpg"/>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/smartify.min.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery('.smartify').smartify();
+		});
+	</script>
+</body>
+</html>
